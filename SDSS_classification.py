@@ -64,7 +64,7 @@ ax.set_zlabel('Redshift')
 
 features, targets = get_features_targets(data)
 X_train, X_test, y_train, y_test = train_test_split(features, targets,random_state=0)
-'''
+
 knn = KNeighborsClassifier(n_neighbors = 4) #choose classifier
 KNN_fit = knn.fit(X_train, y_train)#train classifier
 accuracy = KNN_fit.score(X_test, y_test) #Estimate the accuracy of the classifier on future data
@@ -164,6 +164,6 @@ y_kmeans = kmeans.predict(features)
 centers = kmeans.cluster_centers_
 ax.scatter(centers[:,0],centers[:,1],centers[:,2], marker="o",color='magenta', s=250, linewidths = 10, zorder=10)
 #plt.scatter(centers[:, 0], centers[:, 1], c='black', s=200, alpha=0.5);
-'''
+
 
 plt.show()
