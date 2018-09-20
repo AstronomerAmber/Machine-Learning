@@ -73,19 +73,6 @@ cv_scores = cross_val_score(knn, features, targets)
 print('Cross-validation scores (3-fold):', cv_scores)
 print('Mean cross-validation score (3-fold): {:.3f}'.format(np.mean(cv_scores)))
 
-
-#t = [0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2]
-#for s in t:
-#    scores = []
-#    for i in range(1,1000):
-#        X_train, X_test, y_train, y_test = train_test_split(features, targets, test_size = 1-s)
-#        knn.fit(X_train, y_train)
-#        scores.append(knn.score(X_test, y_test))
-#    plt.plot(s, np.mean(scores), 'bo')
-
-#plt.xlabel('Training set proportion (%)')
-#plt.ylabel('accuracy')
-
 #Support Vector Machines: unnormalized data
 #High C - low regularization (tries to fit training data as well as possible), low C-values - high regularization
 svm10RBF = SVC(C=10).fit(X_train, y_train)
