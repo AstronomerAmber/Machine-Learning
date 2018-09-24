@@ -35,10 +35,10 @@ Scikit-learn requires:
 ## Environment
 I recommend creating a conda environoment so you do not destroy your main installation in case you make a mistake somewhere:
 
-    conda create --name tf_2.7 python=2.7 ipykernal
+    conda create --name ML_2.7 python=2.7 ipykernal
 You can activate the new environment by running the following (on Linux):
 
-    source activate tf
+    source activate ML
 And deactivate it:
 
-    source deactivate tf
+    source deactivate ML
