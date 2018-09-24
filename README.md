@@ -10,3 +10,35 @@ The classifiers from Sckit-learn include:
 ### KNeighborsClassifier, Support Vector Machines (with linear and RBF kernals), a Decision Tree classifier and KMeans clustering.
 
 *Each classifier is evaluated using a confusion matrix
+
+## Installation
+The easiest way to download + install this tutorial is by using git from the command-line:
+
+    git clone https://github.com/AstronomerAmber/Machine-Learning.git
+
+To run them, you also need to install sckit-learn. To install it:
+
+    pip install scikit-learn
+    
+or (if you want GPU support):
+
+    pip install scikit-learn_gpu 
+    
+## Requirements 
+
+Scikit-learn requires:
+
+    Python (>= 2.7 or >= 3.3)
+    NumPy (>= 1.8.2)
+    SciPy (>= 0.13.3)
+
+## Environment
+I recommend creating a conda environoment so you do not destroy your main installation in case you make a mistake somewhere:
+
+    conda create --name tf_2.7 python=2.7 ipykernal
+You can activate the new environment by running the following (on Linux):
+
+    source activate tf
+And deactivate it:
+
+    source deactivate tf
