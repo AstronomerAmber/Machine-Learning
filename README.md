@@ -32,6 +32,13 @@ Scikit-learn requires:
     NumPy (>= 1.8.2)
     SciPy (>= 0.13.3)
 
+-- SDSS_classification.py Requirements --
+    
+    astroML
+    pandas
+    sklearn: KNeighborsRegressor,KNeighborsClassifier,SVC,DecisionTreeRegressor,DecisionTreeClassifier
+    sklearn evaulation metrics: cross_validation,confusion_matrix,accuracy_score, precision_score, recall_score, f1_score
+
 ## Environment
 I recommend creating a conda environoment so you do not destroy your main installation in case you make a mistake somewhere:
 
